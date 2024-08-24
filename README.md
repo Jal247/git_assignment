@@ -31,10 +31,39 @@ pull request on github
 
 d. Describe the steps to add a collaborator to a repository (share write permissions)
 
+ 1. on a Github, go to the repository where you want to add collaborator.
+ 2. Go to the Settings
+ 3.go to the Manage access
+ 4. click on the Add people button
+ 5. 'Add a collaborator to git-module' window will pop up.
+ 6. enter the person's username or full name or email id.
+ 7. click on select a collaborator above.
+collaborator will be added to a repository, enables to make chages/write permissions and push them to the repo without constant permission.
+
+
 e. What is the difference between git and GitHub?
 
+1. git is a Version Control System, which allows user to operate locally, make chages on locat machine and when needed merge all chages to remote server/machine.
+git assures integrity of data/file. git can allow user to track version of file as well as modify file in various way such as VS Code, Nano. 
+In general it is a one system for all combination of work performed by team at the same time or different time, And stay update with the latest changes or notification related to project.
+
+2. GitHub is a hub developed by professional developers. Where everyone can 
+ - look and mange at the project feature/featrues at the same time
+ - create,store,share and learn the code
+ - anyone can collobrate for the learning, knowledge sharing purpose 
+
+
 f. What does git diff do?
+ git diff command show the details of the changes made. 
+ It compares what is in current directory and what is in our staging area.
+ We can compare difference between previous file and current file. It can compare repositories too.
 
 g. What is the main branch?
+ The main branch is the default/initial branch that is created by git when new or clone of the repository created.It is the default branch in the repo for new pull requests and code commits. 
+
 
 h. Besides our initial commit if it is a new repository, should we directly push our changes directly into the main branch?
+
+On main branch after initial commit, we can check status of commit by $git status and then we can directly push changes by command $ git push.
+IF new branch is created on terminal then after commit, we have to save new branch on github(origin) before pushing.
+This can be done by the command $git push --set-upstream origin assignment      
